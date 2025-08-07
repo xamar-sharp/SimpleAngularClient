@@ -1,0 +1,21 @@
+<input type="text" [(ngModel)]="productName" placeholder="Enter product name..." />
+<input type="number" [(ngModel)]="price" placeholder="Enter product price..." />
+<button (click)="addProduct()">
+    ADD!
+</button>
+<button (click)="getProducts()">
+    GET!
+</button>
+<input type="number" [(ngModel)]="deleteId" placeholder="Enter delete id..." />
+<button (click)="dropProduct()">
+    DELETE!
+</button>
+<div *ngIf="products.length != 0">
+    <p>Yoooo</p>
+    <ul>
+        <li *ngFor="let product of products">
+            {{product.id}}+{{product.name}}-{{product.price}}
+        </li>
+    </ul>
+</div>
+<h1>Products page!</h1>

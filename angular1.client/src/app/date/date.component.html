@@ -1,0 +1,8 @@
+{{showContainer}}
+<div *ngIf="!showContainer">
+    <h1>There is no date!</h1>
+</div>
+<ng-container *ngIf="showContainer">
+    <p [innerHTML]="innerHtml"> {{date}}</p>
+</ng-container>
+<button (dblclick)="changeState()">CHANGE STATE!</button>
