@@ -9,7 +9,7 @@ HTTP запросов к ASP.NET Core серверу на C#.
 
 Выполните такую команду в консоли:
 ```bash
-git clone https://github.com/xamar-sharp/Angular1
+git clone https://github.com/xamar-sharp/SimpleAngularClient
 ```
 
 ## Использование
